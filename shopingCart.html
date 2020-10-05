@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles/css/style.css">
+    <link rel="stylesheet" href="styles/css/fontawesome.min.css">
+    <title>Shoping Cart</title>
+</head>
+<body>
+    <div class="header container">
+        <div class="header-left">
+            <a href="index.html"><img src="img/logo.png" alt="logo">Bran<span>d</span></a>
+            <form class="header-search" method="get">
+                <div class="search-browse">Browse &nbsp; <i class="fas fa-caret-down"></i></div>
+                <input type="text" class="inputText" name="search" placeholder="Search for Item...">
+                <button><i class="fas fa-search"></i></button>
+            </form>
+        </div>
+        <div class="header-right">
+            <a class="cart" href="shopingCart.html"><img src="img/cart.png" alt="cart"></a>
+            <a class="myAcc" href="#">My Account &nbsp; <i class="fas fa-caret-down"></i></a>
+        </div>
+    </div>
+    <div class="header-line"></div>
+    <div class="nav">
+        <ul class="menu-list">
+            <li class="menu-item"><a href="#">Home</a></li>
+            <li class="menu-item"><a href="#">Man</a></li>
+            <li class="menu-item"><a href="singlePage.html">Women</a></li>
+            <li class="menu-item"><a href="#">Kids</a></li>
+            <li class="menu-item"><a href="#">Accessories</a></li>
+            <li class="menu-item"><a href="#">Featured</a></li>
+            <li class="menu-item"><a href="checkout.html">Hot deals</a></li>
+        </ul>
+    </div>
+    <div class="newArrivalsBox ">
+        <div class="newArrivals container">
+            <h1>New Arrivals</h1>
+            <ul class="newArrMenu">
+                <li class="newArrList"><a href="#">Home</a></li> &nbsp/&nbsp
+                <li class="newArrList"><a href="#">Men</a></li> &nbsp/&nbsp
+                <li class="newArrList newArrListActive"><a href="#">New Arrivals</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="prodDetBox">
+        <div class="prodDet container prodRow">
+            <div class="prodDetails">Product Details</div>
+            <div class="prodCell">unite Price</div>
+            <div class="prodCell">Quantity</div>
+            <div class="prodCell">shipping</div>
+            <div class="prodCell">Subtotal</div>
+            <div class="prodCell">ACTION</div>
+        </div>
+    </div>
+    <div class="prodDetContent container prodRow">
+        <div class="prodLeft prodDetails">
+            <img src="img/Layer_43.jpg" alt="L43">
+            <div class="prodLeftDescription">
+                <a href="#">Mango  People  T-shirt</a>
+                <div>
+                    <p>color: <span>red</span></p>
+                    <p>size: <span>xll</span></p>
+                </div>
+            </div>
+        </div>
+        <div class="prodCell">$150</div>
+        <div class="prodCell flexCenter"><input type="number" class="quantity"></div>
+        <div class="prodCell">FREE</div>
+        <div class="prodCell">$300</div>
+        <div class="prodCell"><a href="#" class="action"><i class="fas fa-times-circle"></i></a></div>
+    </div>
+    <div class="prodDetContent container prodRow">
+        <div class="prodLeft prodDetails">
+            <img src="img/Layer_44.jpg" alt="L44">
+            <div class="prodLeftDescription">
+                <a href="#">Mango  People  T-shirt</a>
+                <div>
+                    <p>color: <span>red</span></p>
+                    <p>size: <span>xll</span></p>
+                </div>
+            </div>
+        </div>
+        <div class="prodCell">$150</div>
+        <div class="prodCell flexCenter"><input type="number" class="quantity"></div>
+        <div class="prodCell">FREE</div>
+        <div class="prodCell">$300</div>
+        <div class="prodCell"><a href="#" class="action"><i class="fas fa-times-circle"></i></a></div>
+    </div>
+    <div class="prodDetContent container prodRow">
+        <div class="prodLeft prodDetails">
+            <img src="img/Layer_45.jpg" alt="L45">
+            <div class="prodLeftDescription">
+                <a href="#">Mango  People  T-shirt</a>
+                <div>
+                    <p>color: <span>red</span></p>
+                    <p>size: <span>xll</span></p>
+                </div>
+            </div>
+        </div>
+        <div class="prodCell">$150</div>
+        <div class="prodCell flexCenter"><input type="number" class="quantity"></div>
+        <div class="prodCell">FREE</div>
+        <div class="prodCell">$300</div>
+        <div class="prodCell"><a href="#" class="action"><i class="fas fa-times-circle"></i></a></div>
+    </div>
+
+    <div class=" prodButton container">
+        <button>cLEAR SHOPPING CART</button>
+        <button>cONTINUE sHOPPING</button>
+    </div>
+    <div class="shippingAdressBox">
+        <div class="shippingAdress container">
+            <form method="get">
+                <h2>Shipping Adress</h2>
+                <input class="city" list="city" name="city" placeholder="Bangladesh" >
+                    <datalist id="city">
+                        <option label="Bangladesh" value="Bangladesh">
+                        <option label="Russia" value="Russia">
+                        <option label="Germany" value="Germany">
+                        <option label="France" value="France">
+                        <option label="Switzerland" value="Switzerland">
+                        <option label="Luxembourg" value="Luxembourg">
+                    </datalist>
+                <input class="state" placeholder="State">
+                <input class="postcode" type="number" placeholder="Postcode / Zip">
+                <br>
+                <div class="whiteButtonBox"><input class="whiteButton" type="submit" value="get a quote"></div>
+            </form>
+            <form>
+                <h2>coupon discount</h2>
+                <p>Enter your coupon code if you have one</p>
+                <input class="coupon" type="text" placeholder="Coupon code">
+                <div class="whiteButtonBox"><input class="whiteButton" type="submit" value="apply coupon"></div>
+            </form>
+            <div class="subTotalBox">
+                <div class="subTotal">Sub total &nbsp;&nbsp;&nbsp;&nbsp;$900</div>
+                <div class="grandTotal">GRAND TOTAL &nbsp;&nbsp;&nbsp;&nbsp;<span>$900</span></div>
+                <div class="subTotalHr"></div>
+                <div class="proceedBox">
+                    <div class="proceed">
+                        <a href="#">proceed to checkout</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="subscribeBox">
+        <div class="subscribeContent container">
+            <div class="subscribeText">
+                <img src="img/face.png" alt="face" height="83">
+                <div>
+                    <p class="vest">“Vestibulum quis porttitor dui! Quisque viverra nunc mi,
+                        a pulvinar purus condimentum a. Aliquam condimentum mattis neque sed pretium”</p>
+                    <p class="bin">Bin Burhan</p>
+                    <p class="dhaka">Dhaka, Bd</p>
+                    <div class="rectangle">
+                        <div class="white"></div>
+                        <div class="white activePink"></div>
+                        <div class="white"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="subscribe">
+                <p>Subscribe</p>
+                <span>FOR OUR NEWLETTER AND PROMOTION</span>
+                <form class="email" method="get">
+                    <input type="text" name="email" placeholder="Enter Your Email">
+                    <button>Subscribe</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="infoBox container">
+        <div class="info">
+            <div class="infoText">
+                <a class="brand" href="index.html"><img src="img/logo.png" alt="logo">Bran<span>d</span></a>
+                <p>Objectively transition extensive data rather than cross functional solutions. Monotonectally syndicate multidisciplinary materials before go forward benefits. Intrinsicly syndicate an expanded array of processes and cross-unit partnerships.
+                    <br><br>
+                    Efficiently plagiarize 24/365 action items and focused infomediaries.
+                    Distinctively seize superior initiatives for wireless technologies. Dynamically optimize.
+                </p>
+            </div>
+            <div class="infoLinks">
+                <ul>
+                    <li class="infoList"><h2>COMPANY</h2></li>
+                    <li class="infoList"><a class="infoListLink" href="#">home</a></li>
+                    <li class="infoList"><a class="infoListLink" href="#">shop</a></li>
+                    <li class="infoList"><a class="infoListLink" href="#">about</a></li>
+                    <li class="infoList"><a class="infoListLink" href="#">how it works</a></li>
+                    <li class="infoList"><a class="infoListLink" href="#">contact</a></li>
+                </ul>
+            </div>
+            <div class="infoLinks">
+                <ul>
+                    <li class="infoList"><h2>INFORMATION</h2></li>
+                    <li class="infoList"><a class="infoListLink" href="#">Tearms & Condition</a></li>
+                    <li class="infoList"><a class="infoListLink" href="#">Privacy Policy</a></li>
+                    <li class="infoList"><a class="infoListLink" href="#">How to Buy</a></li>
+                    <li class="infoList"><a class="infoListLink" href="#">How to Sell</a></li>
+                    <li class="infoList"><a class="infoListLink" href="#">Promotion</a></li>
+                </ul>
+            </div>
+            <div class="infoLinks">
+                <ul>
+                    <li class="infoList"><h2>SHOP CATEGORY</h2></li>
+                    <li class="infoList"><a class="infoListLink" href="#">men</a></li>
+                    <li class="infoList"><a class="infoListLink" href="#">women</a></li>
+                    <li class="infoList"><a class="infoListLink" href="#">child</a></li>
+                    <li class="infoList"><a class="infoListLink" href="#">apparel</a></li>
+                    <li class="infoList"><a class="infoListLink" href="#">browse all</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+<footer>
+    <div class="footer container">
+        <div class="copy"> &copy; 2017 Brand  All Rights Reserved. </div>
+        <div class="footerLinks">
+            <a href="#"><div class="footer-link"><i class="fab fa-linkedin-in"></i></div></a>
+            <a href="#"><div class="footer-link"><i class="fab fa-twitter"></i></div></a>
+            <a href="#"><div class="footer-link"><i class="fab fa-pinterest-p"></i></div></a>
+            <a href="#"><div class="footer-link"><i class="fab fa-facebook-f"></i></div></a>
+            <a href="#"><div class="footer-link"><i class="fab fa-google-plus-g"></i></div></a>
+        </div>
+    </div>
+</footer>
+</html>

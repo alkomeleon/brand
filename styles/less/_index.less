@@ -1,0 +1,335 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100&display=swap');
+
+body {
+  margin: 0;
+  padding: 0;
+  color: #222222;
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  width: 1140px;
+  margin: 0 auto;
+}
+
+.citizen {
+  height: 665px;
+  background-color: #e8e8e8;
+  background-image: url("../../img/topHeaderBack.png");
+  background-repeat:  no-repeat;
+  background-size: 608px;
+  background-position: right 25% top 0;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.citizenText {
+  border-left: 12px solid @mainColor;
+  padding-left: 12px;
+}
+
+.tb {
+  font-size: 60px;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  margin: 0;
+  margin-bottom: 20px;
+  line-height: 45px;
+}
+
+.lux {
+  font-size: 40px;
+  font-weight: 900;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin: 0;
+  line-height: 35px;
+}
+
+.theBrand {
+  margin-top: -50px;
+
+  span {
+    color: @mainColor;
+    letter-spacing: 1px;
+  }
+}
+
+.content {
+  height: 823px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: space-between;
+  margin-top: 98px;
+
+  div {
+    text-transform: uppercase;
+    background-color: #fff;
+    display: inline-block;
+    h4 {
+      font-size: 18px;
+      font-weight: 900;
+      letter-spacing: 0.45px;
+      margin-top: 16px;
+      margin-left: 18px;
+      margin-bottom: 16px;
+    }
+    h3 {
+      color: @mainColor;
+      font-size: 30px;
+      letter-spacing: 0.75px;
+      margin-left: 18px;
+      margin-top: 16px;
+      margin-right: 18px;
+      margin-bottom: 16px;
+      font-weight: 800;
+    }
+  }
+}
+
+.contentText {
+  margin-top: 26px;
+  line-height: 0.5;
+}
+
+.forMen {
+  background-image: url("../../img/offer1.jpg");
+  background-repeat: no-repeat;
+  width: 560px;
+  height: 542px;
+}
+
+.Acces {
+  background-image: url("../../img/offer2.jpg");
+  background-repeat: no-repeat;
+  width: 560px;
+  height: 261px;
+}
+
+.Women {
+  background-image: url("../../img/offer3.jpg");
+  background-repeat: no-repeat;
+  width: 560px;
+  height: 261px;
+}
+
+.forKids {
+  background-image: url("../../img/offer4.jpg");
+  background-repeat: no-repeat;
+  width: 560px;
+  height: 542px;
+}
+
+.featuredItems {
+  text-align: center;
+  h3 {
+    font-size: 30px;
+    font-weight: 700;
+    letter-spacing: 0.75px;
+    margin-top: 100px;
+    margin-bottom: 16px;
+  }
+  p {
+    color: #9f9f9f;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 0.35px;
+    margin: 0;
+  }
+}
+
+.featuredContent {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  .description {
+    font-size: 13px;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin-left: 14px;
+  }
+  .price {
+    color: @mainColor;
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-left: 14px;
+  }
+}
+
+.products {
+  position: relative;
+  margin-top: 60px;
+  .prodImg {
+    width: 261px;
+    height: 280px;
+  }
+}
+
+.imgHover {
+  width: 261px;
+  height: 279px;
+  background-color: #3a383899;
+  background-blend-mode: overlay;
+  background-size: 261px 280px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  -webkit-transition: opacity 0.4s linear;
+  -o-transition: opacity 0.4s linear;
+  transition: opacity 0.4s linear;
+  button {
+    background-color: #0000;
+    background-blend-mode: overlay;
+    width: 140px;
+    height: 45px;
+    border: 1px solid #ffffff;
+    color: white;
+    font-size: 14px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 12px;
+    padding-right: 12px;
+    margin-top: -50px;
+    -webkit-transition: 0.2s linear;
+    -o-transition: 0.2s linear;
+    transition: 0.2s linear;
+    &:hover {
+      -webkit-box-shadow: 4px 3px 50px -6px rgba(255,255,255,1);
+      -moz-box-shadow: 4px 3px 50px -6px rgba(255,255,255,1);
+      box-shadow: 4px 3px 50px -6px rgba(255,255,255,1);
+      -webkit-transition: 0.2s linear;
+      -o-transition: 0.2s linear;
+      transition: 0.2s linear;
+    }
+  }
+}
+
+.products:hover {
+  -webkit-box-shadow: 7px 9px 5px 0px rgba(189,178,184,1);
+  -moz-box-shadow: 7px 9px 5px 0px rgba(189,178,184,1);
+  box-shadow: 7px 9px 5px 0px rgba(189,178,184,1);
+}
+
+.products:hover .imgHover {
+  opacity: 1;
+  -webkit-transition: opacity 0.4s linear;
+  -o-transition: opacity 0.4s linear;
+  transition: opacity 0.4s linear;
+}
+
+.allProductBox {
+  display: flex;
+  justify-content: center;
+  margin-top: 79px;
+}
+
+.allProduct {
+  width: 212px;
+  height: 48px;
+  background-color: @mainColor;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  -webkit-transition: 0.1s linear;
+  -o-transition: 0.1s linear;
+  transition: 0.1s linear;
+  a {
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 0.4px;
+  }
+  &:hover {
+    background-color: @mainHoverColor;
+    -webkit-transition: 0.1s linear;
+    -o-transition: 0.1s linear;
+    transition: 0.1s linear;
+  }
+}
+
+.sale {
+  height: 529px;
+  color: #ffffff;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 113px;
+  margin-bottom: 97px;
+  h3 {
+    font-size: 32px;
+    letter-spacing: 0.9px;
+    margin: 0;
+  }
+  h2 {
+    font-size: 54px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    margin-bottom: 10px;
+    span {
+      color: @mainColor;
+    }
+  }
+  .saleBackground {
+    background: url(../../img/bg-women.jpg) no-repeat, #0004;
+    background-size: cover;
+    background-blend-mode: overlay;
+    flex-grow: 1;
+  }
+
+  .saleText{
+    margin-top: 146px;
+    margin-left: 39px;
+  }
+
+  .saleInfoBox {
+    background-color: #222224;
+    background-position: right;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 373px;
+    box-sizing: border-box;
+
+    .saleBlock {
+      display: flex;
+      justify-content: space-around;
+      flex-direction: row;
+      align-items: flex-start;
+
+      .saleImg {
+        width: 270px;
+        text-align: center;
+      }
+
+      .saleInfo{
+        padding-right: 25px;
+      }
+
+      h4 {
+        margin: 5px 0 0 0;
+      }
+    }
+  }
+}
+
+.saleBlock:hover h4 {
+    color: @mainColor;
+}
+
