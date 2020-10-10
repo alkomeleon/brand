@@ -11,37 +11,129 @@
     <div class="header-left">
         <a href="index.html"><img src="img/logo.png" alt="logo">Bran<span>d</span></a>
         <form class="header-search" method="get">
-            <div class="search-browse">Browse &nbsp; <i class="fas fa-caret-down"></i></div>
+            <div class="search-browse">Browse &nbsp; <i class="fas fa-caret-down"></i>
+                <div class="browse-menu-box">
+                    <div class="tail1 browseTail1"></div>
+                    <div class="tail2 browseTail2"></div>
+                    <div class="browse-menu-header">Women</div>
+                    <ul class="browse-menu-list">
+                        <li><a href="#">Dresses</a></li>
+                        <li><a href="#">Tops</a></li>
+                        <li><a href="#">Sweaters/Knits</a></li>
+                        <li><a href="#">Jackets/Coats</a></li>
+                        <li><a href="#">Blazers</a></li>
+                        <li><a href="#">Denim</a></li>
+                        <li><a href="#">Leggings/Pants</a></li>
+                        <li><a href="#">Skirts/Shorts</a></li>
+                        <li><a href="#">Accessories</a></li>
+                    </ul>
+                    <div class="browse-menu-header">Men</div>
+                    <ul class="browse-menu-list">
+                        <li><a href="#">Tees/Tank tops</a></li>
+                        <li><a href="#">Shirts/Polos</a></li>
+                        <li><a href="#">Sweaters</a></li>
+                        <li><a href="#">Sweatshirts/Hoodies</a></li>
+                        <li><a href="#">Blazers</a></li>
+                        <li><a href="#">Jackets/vests</a></li>
+                    </ul>
+                </div>
+            </div>
             <input type="text" class="inputText" name="search" placeholder="Search for Item...">
             <button><i class="fas fa-search"></i></button>
         </form>
     </div>
     <div class="header-right">
-        <a class="cart" href="shopingCart.html"><img src="img/cart.png" alt="cart"></a>
+        <label class="cartIcon" for="cart"><img src="img/cart.png" alt="cart"></label>
+        <input class="cart" id="cart" type="checkbox">
+        <div class="cartMenuBox">
+            <div class="tail1 cartTail1"></div>
+            <div class="tail2 cartTail2"></div>
+            <div class="cartMenu">
+                <div class="cartMenuImg">
+                    <img src="img/Layer_46.jpg" alt="shirt">
+                </div>
+                <div class="cartMenuInfo">
+                    <p>rebox zane</p>
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i><br>
+                    <span>1 x $250</span>
+                </div>
+                <a href="#"><i class="fas fa-times-circle"></i></a>
+            </div>
+            <div class="cartMenu">
+                <div class="cartMenuImg">
+                    <img src="img/layer_421.jpg" alt="shirt">
+                </div>
+                <div class="cartMenuInfo">
+                    <p>rebox zane</p>
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i><br>
+                    <span>1 x $250</span>
+                </div>
+                <a href="#"><i class="fas fa-times-circle"></i></a>
+            </div>
+            <div class="cartMenuPrice">
+                <p>TOTAL</p>
+                <p>$500.00</p>
+            </div>
+            <div class="cartMenuCheckoutButtonBox">
+                <a class="cartMenuCheckoutButton" href="checkout.html">checkout</a>
+                <a class="cartMenuCheckoutButton" href="shopingCart.html">go to cart</a>
+            </div>
+        </div>
         <a class="myAcc" href="#">My Account &nbsp; <i class="fas fa-caret-down"></i></a>
     </div>
 </div>
 <div class="header-line"></div>
 <div class="nav">
     <ul class="menu-list">
-        <li class="menu-item"><a href="#">Home</a></li>
-        <li class="menu-item"><a href="#">Man</a></li>
-        <li class="menu-item"><a href="singlePage.html">Women</a></li>
-        <li class="menu-item"><a href="#">Kids</a></li>
-        <li class="menu-item"><a href="#">Accessories</a></li>
-        <li class="menu-item"><a href="#">Featured</a></li>
-        <li class="menu-item"><a href="checkout.html">Hot deals</a></li>
+        <li class="menu-item"><a class="menu-link" href="#">Home</a></li>
+        <li class="menu-item"><a class="menu-link" href="#">Man</a></li>
+        <li class="menu-item womenHover">
+            <a class="menu-link" href="singlePage.html">Women</a>
+            <div class="navMenuBox">
+                <div class="tail1 navTail1"></div>
+                <div class="tail2 navTail2"></div>
+                <div class="navMenuHeader">Women</div>
+                <ul class="navMenuList ">
+                    <li><a  href="#">Dresses</a></li>
+                    <li><a href="#">Tops</a></li>
+                    <li><a href="#">Sweaters/Knits</a></li>
+                    <li><a href="#">Jackets/Coats</a></li>
+                    <li><a href="#">Blazers</a></li>
+                    <li><a href="#">Denim</a></li>
+                    <li><a href="#">Leggings/Pants</a></li>
+                    <li><a href="#">Skirts/Shorts</a></li>
+                    <li><a href="#">Accessories</a></li>
+                </ul>
+                <div class="navMenuHeader">Women</div>
+                <ul class="navMenuList">
+                    <li><a href="#">Dresses</a></li>
+                    <li><a href="#">Tops</a></li>
+                    <li><a href="#">Sweaters/Knits</a></li>
+                    <li><a href="#">Jackets/Coats</a></li>
+                </ul>
+                <div class="navMenuHeader">Women</div>
+                <ul class="navMenuList">
+                    <li><a href="#">Dresses</a></li>
+                    <li><a href="#">Tops</a></li>
+                    <li><a href="#">Sweaters/Knits</a></li>
+                </ul>
+                <div class="navMenuHeader">Women</div>
+                <ul class="navMenuList">
+                    <li><a href="#">Dresses</a></li>
+                    <li><a href="#">Tops</a></li>
+                    <li><a href="#">Sweaters/Knits</a></li>
+                    <li><a href="#">Jackets/Coats</a></li>
+                </ul>
+                <div class="navMenuSale">
+                    <a href="#">Super <br> sale!</a>
+                </div>
+            </div>
+        </li>
+        <li class="menu-item"><a class="menu-link" href="#">Kids</a></li>
+        <li class="menu-item"><a class="menu-link" href="#">Accessories</a></li>
+        <li class="menu-item"><a class="menu-link" href="#">Featured</a></li>
+        <li class="menu-item"><a class="menu-link" href="checkout.html">Hot deals</a></li>
     </ul>
-</div>
-<div class="newArrivalsBox ">
-    <div class="newArrivals container">
-        <h1>New Arrivals</h1>
-        <ul class="newArrMenu">
-            <li class="newArrList"><a href="#">Home</a></li> &nbsp/&nbsp
-            <li class="newArrList"><a href="#">Men</a></li> &nbsp/&nbsp
-            <li class="newArrList newArrListActive"><a href="#">New Arrivals</a></li>
-        </ul>
-    </div>
 </div>
 <!--хедер-->
 
