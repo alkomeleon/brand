@@ -13,7 +13,7 @@ a {
 }
 
 .container {
-  width: 1140px;
+  //width: 1140px;
   margin: 0 auto;
 }
 
@@ -63,7 +63,7 @@ a {
 }
 
 .content {
-  height: 823px;
+  min-height: 823px;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -333,3 +333,50 @@ a {
     color: @mainColor;
 }
 
+@media (min-width: 1140px) {
+  .container {
+    width: 1140px;
+  }
+}
+
+@media (max-width: 1139px) {
+  .container {
+    width: 720px;
+  }
+  .citizenText {
+    margin-top: 100px;
+  }
+  .content {
+    flex-wrap: nowrap;
+    align-items: center;
+  }
+  .sale {
+    flex-direction: column;
+  }
+  .saleText {
+    margin-bottom: 20px;
+  }
+  .sale .saleInfoBox {
+    width: inherit;
+    padding-top: 10px;
+    .saleBlock {
+      align-items: center;
+    }
+  }
+
+}
+
+@media (max-width: 719px) {
+  .container {
+    width: 540px;
+  }
+}
+
+@media (max-width: 539px) {
+  .container {
+    width: 100%;
+  }
+  .featuredContent {
+    justify-content: center;
+  }
+}

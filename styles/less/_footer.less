@@ -241,3 +241,52 @@ footer a {
   justify-content: space-between;
   align-items: center;
 }
+
+@media (min-width: 1140px) {
+  .container {
+    width: 1140px;
+  }
+}
+
+@media (max-width: 1139px) {
+  .container {
+    width: 720px;
+  }
+}
+
+@media (max-width: 719px) {
+  .container {
+    width: 540px;
+  }
+  .subscribe input {
+    width: 150px;
+  }
+  .subscribeText {
+    flex-direction: column;
+    & img {
+      width: 83px;
+      margin: auto;
+    }
+  }
+  .info {
+    flex-wrap: wrap;
+    justify-content: center;
+    .infoText {
+      width: 540px;
+      text-align: center;
+    }
+    ul {
+      padding: 0;
+      text-align: center;
+    }
+  }
+  .header-left a, .info .brand {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 539px) {
+  .container {
+    width: 100%;
+  }
+}
