@@ -1,0 +1,336 @@
+.newArrivalsBox {
+  height: 151px;
+  background-color: #f8f3f4;
+  display: flex;
+  align-items: center;
+}
+
+.newArrivals {
+  display: flex;
+  justify-content: space-between;
+  h1 {
+    color: @mainColor;
+    font-size: 24px;
+    font-weight: 900;
+    text-transform: uppercase;
+  }
+  ul {
+    display: flex;
+    flex-direction: row;
+  }
+}
+
+.newArrList {
+  list-style-type: none;
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: 300;
+  a {
+    color: #636363;
+    &:hover {
+      color: @mainColor;
+      font-weight: 700;
+    }
+  }
+}
+
+.newArrListActive {
+  font-weight: 700;
+  font-size: 14px;
+  text-transform: uppercase;
+  a {
+    color: @mainColor;
+  }
+}
+
+.prodRow {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  .prodDetails {
+    flex-grow: 1;
+    text-align: left;
+  }
+  .prodCell {
+    width: 120px;
+    text-align: center;
+  }
+}
+
+.prodDetBox {
+  margin-top: 85px;
+}
+
+.prodDet {
+  font-size: 13px;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: -0.2px;
+  border-bottom: 1px solid #eaeaea;
+  height: 40px;
+  a {
+    color: #222222;
+  }
+}
+
+.prodDetContent {
+  height: 162px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: -20px !important;
+  border-bottom: 1px solid #eaeaea;
+  padding-top: 20px;
+}
+
+.prodLeft {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  img {
+    width: 100px;
+    height: 115px;
+    margin-right: 20px;
+  }
+  a {
+    color: #222222;
+    font-size: 13px;
+    font-weight: 800;
+    text-transform: uppercase;
+    -webkit-transition: 0.1s linear;
+    -o-transition: 0.1s linear;
+    transition: 0.1s linear;
+    &:hover {
+      color: @mainColor;
+      -webkit-transition: 0.1s linear;
+      -o-transition: 0.1s linear;
+      transition: 0.1s linear;
+    }
+  }
+  p {
+    font-size: 13px;
+    color: #6c6c6c;
+    font-weight: 600;
+    text-transform: capitalize;
+    margin: 2px;
+    span {
+      color: #898989;
+      font-weight: 500;
+      margin-left: 4px;
+    }
+  }
+}
+
+.prodLeftDescription {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-top: 7px;
+  padding-bottom: 14px;
+}
+
+.action {
+  color: #c0c0c0;
+  font-size: 16px;
+  text-transform: uppercase;
+  &:hover {
+    color: @mainColor;
+  }
+}
+
+.quantity {
+  width: 54px;
+  height: 30px;
+  border: 1px solid #eaeaea;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  outline: none;
+  text-align: center;
+  margin: 0;
+}
+
+.flexCenter {
+  display: flex;
+  justify-content: center;
+}
+
+.prodButton {
+  display: flex;
+  justify-content: space-between;
+  button {
+    width: 235px;
+    height: 50px;
+    border: 1px solid #eaeaea;
+    background-color: #ffffff;
+    color: #4a4a4a;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    outline: none;
+    margin-top: 44px;
+    -webkit-transition: 0.2s linear;
+    -o-transition: 0.2s linear;
+    transition: 0.2s linear;
+    &:hover {
+      background-color: @mainColor;
+      color: white;
+      -webkit-transition: 0.2s linear;
+      -o-transition: 0.2s linear;
+      transition: 0.2s linear;
+    }
+  }
+}
+
+.shippingAdressBox {
+  margin-top: 63px;
+  margin-bottom: 79px;
+  height: 300px;
+}
+
+.shippingAdress {
+  height: 410px;
+  margin-top: 63px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  h2 {
+    font-size: 16px;
+    font-weight: 900;
+    text-transform: uppercase;
+    margin-bottom: 22px;
+    margin-top: 0;
+  }
+  p {
+    color: #000000;
+    font-size: 14px;
+    font-weight: 300;
+    margin-top: 6px;
+  }
+}
+
+.shippingAdress form {
+  display: flex;
+  flex-direction: column;
+}
+
+input::-moz-placeholder { color: #b1b1b1; }
+input::-webkit-input-placeholder { color: #b1b1b1; }
+
+.city, .state, .postcode, .coupon {
+  width: 335px;
+  height: 45px;
+  border: 1px solid #eaeaea;
+  background-color: #ffffff;
+  color: #4a4a4a;
+  font-size: 13px;
+  font-weight: 300;
+  outline: none;
+  padding-left: 18px;
+  margin-bottom: 20px;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.whiteButtonBox {
+  display: inline-block;
+}
+
+.whiteButton {
+  color: #757575;
+  font-size: 11px;
+  font-weight: 800;
+  text-transform: uppercase;
+  height: 35px;
+  border: 1px solid #eaeaea;
+  background-color: #ffffff;
+  outline: none;
+  padding-left: 8px;
+  padding-right: 8px;
+  -webkit-transition: 0.1s linear;
+  -o-transition: 0.1s linear;
+  transition: 0.1s linear;
+  &:hover{
+    background-color: @mainColor;
+    color: white;
+    -webkit-transition: 0.1s linear;
+    -o-transition: 0.1s linear;
+    transition: 0.1s linear;
+  }
+}
+
+.subTotalBox {
+  width: 360px;
+  height: 214px;
+  background-color: #f5f3f3;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  text-align: right;
+  .subTotal {
+    color: #4a4a4a;
+    font-size: 11px;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin-top: 40px;
+    margin-right: 41px;
+  }
+  .grandTotal {
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-right: 41px;
+    margin-top: 14px;
+
+    span {
+      color: @mainColor;
+    }
+  }
+  .proceed {
+    margin-bottom: 44px;
+    text-transform: uppercase;
+    background-color: @mainColor;
+    width: 273px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    -webkit-transition: 0.3s linear;
+    -o-transition: 0.3s linear;
+    transition: 0.3s linear;
+  a {
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+    &:hover {
+      background-color: @mainHoverColor;
+      -webkit-transition: 0.3s linear;
+      -o-transition: 0.3s linear;
+      transition: 0.3s linear;
+    }
+  }
+}
+
+.subTotalHr {
+  width: 275px;
+  height: 1px;
+  margin: 15px auto;
+  background-color: #e2e2e2;
+
+}
+
+.proceedBox {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
