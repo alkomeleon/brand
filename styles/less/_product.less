@@ -1,0 +1,277 @@
+.product-nav-box {
+  display: flex;
+  flex-direction: row;
+  margin-top: 60px;
+}
+
+.product-nav h2 {
+  width: 230px;
+  height: 37px;
+  color: #6f6e6e;
+  font-size: 14px;
+  font-weight: bold;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-left: @anothercolor 5px solid;
+  border-bottom: #eae1e1 1px solid;
+  padding-left: 11px;
+  margin-right: 55px;
+}
+
+.product-nav .active-h2 {
+  color: @anothercolor;
+}
+
+.category-list ul {
+  list-style-type: none;
+  padding-left: 16px;
+}
+
+.product-content-box {
+  display: flex;
+  flex-direction: column;
+}
+
+.product-content {
+  display: flex;
+  justify-content: space-between;
+  h2 {
+    font-size: 14px;
+    font-weight: bold;
+    color: #6f6e6e;
+    text-transform: uppercase;
+  }
+  ul {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 0;
+  }
+  li {
+    list-style-type: none;
+    margin-right: 10px;
+  }
+}
+
+.choose-list {
+  width: 200px;
+}
+
+.product-link a {
+  line-height: 33px;
+  text-decoration: none;
+  font-size: 14px;
+  color: #6f6e6e;
+  font-weight: 600;
+  text-transform: capitalize;
+  &:hover{
+    color: @mainColor;
+  }
+}
+
+.product-link-border a {
+  border-right: #bdbcbc 1px solid;
+  padding-right: 10px;
+}
+
+.product-size {
+  margin-left: 110px;
+  padding-right: 58px;
+  width: 222px;
+  div {
+    font-size: 14px;
+    color: #6f6e6e;
+    line-height: 20px;
+    text-transform: uppercase;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    font-weight: 500;
+  }
+  input {
+    margin: 0 5px 0 0;
+  }
+  label {
+    width: 47px;
+    margin-bottom: 10px;
+    margin-right: 7px;
+  }
+}
+
+.product-price {
+  width: 270px;
+  input {
+    width: 269px;
+    background: #ffffff
+  }
+}
+
+.price-range {
+  font-size: 14px;
+  color: #6f6e6e;
+  font-weight: 500;
+  display: flex;
+  justify-content: space-between;
+}
+
+.sort-box {
+  height: 50px;
+  background-color: #f3f3f3;
+  display: flex;
+  align-items: center;
+  padding-left: 9px;
+  div {
+    background-color: #fff;
+    height: 30px;
+    display: flex;
+    align-items: center;
+
+  }
+}
+
+.sort-by {
+  background-color: #fff;
+  label {
+    font-size: 14px;
+    color: #6f6e6e;
+    text-transform: capitalize;
+    font-weight: 500;
+    margin-left: 10px;
+  }
+  option:active {
+    outline: none;
+  }
+}
+
+.pagination-box {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 110px;
+  margin-top: 40px;
+}
+
+.pagination {
+  width: 240px;
+  height: 30px;
+  border: 1px solid #e5e5e5;
+  border-radius: 3px;
+  padding: 10px;
+  ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0;
+    margin: 0;
+  }
+  li {
+    list-style-type: none;
+    a {
+      text-decoration: none;
+      font-size: 16px;
+      font-weight: 600;
+      color: #c4c4c4;
+      line-height: 26px;
+      &:hover {
+        color: @mainColor;
+      }
+    }
+  }
+}
+.active-pagination {
+  color: @mainColor !important;
+}
+
+.view-all {
+  height: 44px;
+  width: 150px;
+  background-color: #fff;
+  outline: none;
+  color: @mainColor;
+  font-size: 16px;
+  font-weight: 600;
+  border: 1px solid @mainColor;
+  border-radius: 3px;
+  &:hover {
+    -webkit-box-shadow: 3px 3px 13px 6px rgba(247,205,228,1);
+    -moz-box-shadow: 3px 3px 13px 6px rgba(247,205,228,1);
+    box-shadow: 3px 3px 13px 6px rgba(247,205,228,1);
+    -webkit-transition: 0.2s linear;
+    -o-transition: 0.2s linear;
+    transition: 0.2s linear;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.sale-info-horiz-box {
+  background-color: #222224;
+  min-height: 341px;
+  display: flex;
+  align-items: center;
+}
+
+.sale-info-horiz .sale-block:nth-child(2) {
+  margin: -7px;
+}
+
+.sale-info-horiz {
+  display: flex;
+  flex-direction: row;
+  h4 {
+    color: white;
+    font-size: 20px;
+  }
+  p {
+    color: white;
+  }
+  .sale-block-center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-left: 22px;
+    margin-right: 22px;
+  }
+}

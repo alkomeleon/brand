@@ -29,7 +29,7 @@ a {
   align-items: center;
 }
 
-.citizenText {
+.citizen-text {
   border-left: 12px solid @mainColor;
   padding-left: 12px;
 }
@@ -53,7 +53,7 @@ a {
   line-height: 35px;
 }
 
-.theBrand {
+.the-brand {
   margin-top: -50px;
 
   span {
@@ -63,7 +63,6 @@ a {
 }
 
 .content {
-  min-height: 823px;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -96,40 +95,40 @@ a {
   }
 }
 
-.contentText {
+.content-text {
   margin-top: 26px;
   line-height: 0.5;
 }
 
-.forMen {
+.for-men {
   background-image: url("../../img/offer1.jpg");
   background-repeat: no-repeat;
   width: 560px;
   height: 542px;
 }
 
-.Acces {
+.acces {
   background-image: url("../../img/offer2.jpg");
   background-repeat: no-repeat;
   width: 560px;
   height: 261px;
 }
 
-.Women {
+.women {
   background-image: url("../../img/offer3.jpg");
   background-repeat: no-repeat;
   width: 560px;
   height: 261px;
 }
 
-.forKids {
+.for-kids {
   background-image: url("../../img/offer4.jpg");
   background-repeat: no-repeat;
   width: 560px;
   height: 542px;
 }
 
-.featuredItems {
+.featured-items {
   text-align: center;
   h3 {
     font-size: 30px;
@@ -147,7 +146,7 @@ a {
   }
 }
 
-.featuredContent {
+.featured-content {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -170,13 +169,13 @@ a {
 .products {
   position: relative;
   margin-top: 60px;
-  .prodImg {
+  .prod-img {
     width: 261px;
     height: 280px;
   }
 }
 
-.imgHover {
+.img-hover {
   width: 261px;
   height: 279px;
   background-color: #3a383899;
@@ -227,20 +226,20 @@ a {
   box-shadow: 7px 9px 5px 0px rgba(189,178,184,1);
 }
 
-.products:hover .imgHover {
+.products:hover .img-hover {
   opacity: 1;
   -webkit-transition: opacity 0.4s linear;
   -o-transition: opacity 0.4s linear;
   transition: opacity 0.4s linear;
 }
 
-.allProductBox {
+.all-product-box {
   display: flex;
   justify-content: center;
   margin-top: 79px;
 }
 
-.allProduct {
+.all-product {
   width: 212px;
   height: 48px;
   background-color: @mainColor;
@@ -286,19 +285,19 @@ a {
       color: @mainColor;
     }
   }
-  .saleBackground {
+  .sale-background {
     background: url(../../img/bg-women.jpg) no-repeat, #0004;
     background-size: cover;
     background-blend-mode: overlay;
     flex-grow: 1;
   }
 
-  .saleText{
+  .sale-text{
     margin-top: 146px;
     margin-left: 39px;
   }
 
-  .saleInfoBox {
+  .sale-info-box {
     background-color: #222224;
     background-position: right;
     display: flex;
@@ -307,18 +306,18 @@ a {
     width: 373px;
     box-sizing: border-box;
 
-    .saleBlock {
+    .sale-block {
       display: flex;
       justify-content: space-around;
       flex-direction: row;
       align-items: flex-start;
 
-      .saleImg {
+      .sale-img {
         width: 270px;
         text-align: center;
       }
 
-      .saleInfo{
+      .sale-info{
         padding-right: 25px;
       }
 
@@ -329,7 +328,7 @@ a {
   }
 }
 
-.saleBlock:hover h4 {
+.sale-block:hover h4 {
     color: @mainColor;
 }
 
@@ -337,13 +336,16 @@ a {
   .container {
     width: 1140px;
   }
+  .content {
+    height: 838px;
+  }
 }
 
 @media (max-width: 1139px) {
   .container {
     width: 720px;
   }
-  .citizenText {
+  .citizen-text {
     margin-top: 100px;
   }
   .content {
@@ -353,22 +355,32 @@ a {
   .sale {
     flex-direction: column;
   }
-  .saleText {
+  .sale-text {
     margin-bottom: 20px;
   }
-  .sale .saleInfoBox {
+  .sale .sale-info-box {
     width: inherit;
     padding-top: 10px;
-    .saleBlock {
+    .sale-block {
       align-items: center;
     }
   }
-
 }
 
 @media (max-width: 719px) {
   .container {
     width: 540px;
+  }
+  .for-men, .for-kids, .acces, .women {
+    width: 520px;
+  }
+  .for-men {
+    background-position: 70% 0;
+  }
+  .citizen-text {
+    background-color: #fff5;
+    padding-top: 10px;
+    padding-bottom: 10px;
   }
 }
 
@@ -376,7 +388,7 @@ a {
   .container {
     width: 100%;
   }
-  .featuredContent {
+  .featured-content {
     justify-content: center;
   }
 }
