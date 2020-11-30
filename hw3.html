@@ -66,8 +66,11 @@
 
         render(text = "") {
             let listHtml = '';
+            let regexpText = new RegExp (`\\b${text}\\b`, 'gi');
+            console.log(`\\b${text}\\b`);
             this.goods.forEach(good => {
-                if (good.product_name.toLowerCase().includes(text.toLowerCase())) {
+                console.log(good.product_name, regexpText.test(good.product_name));
+                if (regexpText.test(good.product_name) || text === "") {
                     const goodItem = new GoodsItem(good.product_name, good.price);
                     listHtml += goodItem.render();
                 }

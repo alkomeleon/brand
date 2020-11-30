@@ -41,3 +41,36 @@ form.addEventListener("submit", function (event) {
         event.preventDefault();
     }
 });
+
+name.addEventListener("input", () => {
+    if (regexpName.test(name.value)) {
+        name.style.borderColor = "black";
+    }
+    else {
+        name.style.borderColor = "red";
+    }
+});
+tel.addEventListener("input", () => {
+    if (regexpTel.test(tel.value)) {
+        tel.style.borderColor = "black";
+    }
+    else {
+        tel.style.borderColor = "red";
+    }
+});
+email.addEventListener("input", () => {
+    if (regexpEmail.test(email.value)) {
+        email.style.borderColor = "black";
+    }
+    else {
+        email.style.borderColor = "red";
+    }
+});
+text.addEventListener("input", () => {
+    if (text.value !== "") {
+        text.style.borderColor = "black";
+    }
+    else {
+        text.style.borderColor = "red";
+    }
+});
