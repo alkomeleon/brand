@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+    "use strict"
+    let text = "Albert Einstein once said: 'If you can't explain it simply, you don't understand it well enough.'";
+    const regexp = /((?<![a-zA-Z])\'(?![a-zA-Z])|(?<=[a-zA-Z])\'(?![a-zA-Z])|(?<![a-zA-Z])\'(?=[a-zA-Z]))/gm;
+    console.log(text.match(regexp));
+    text = text.replace(regexp, "\"");
+    console.log(text);
+    </script>
+</body>
+</html>

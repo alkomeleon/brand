@@ -5,6 +5,8 @@
     <title>Title</title>
 </head>
 <body>
+<input type="text" id="search">
+<button id="search-button">search</button><hr>
 <div class="goods-list" style="background-color: #9f9f9f; padding: 20px;"></div>
 <script>
 
@@ -61,11 +63,14 @@
             });
         }
 
-        render() {
+
+        render(text = "") {
             let listHtml = '';
             this.goods.forEach(good => {
-                const goodItem = new GoodsItem(good.product_name, good.price);
-                listHtml += goodItem.render();
+                if (good.product_name.toLowerCase().includes(text.toLowerCase())) {
+                    const goodItem = new GoodsItem(good.product_name, good.price);
+                    listHtml += goodItem.render();
+                }
             });
             document.querySelector('.goods-list').innerHTML = listHtml;
         }
@@ -76,6 +81,10 @@
     goodsList.fetchGoods()
         .then(() => goodsList.render())
         .catch(() => document.querySelector('.goods-list').innerHTML = "ОШИБКА ПРИ ПОЛУЧЕНИИ СПИСКА ТОВАРОВ");
+
+    document.getElementById("search-button").addEventListener("click", function () {
+        goodsList.render(document.getElementById("search").value);
+    })
 </script>
 </body>
 </html>
