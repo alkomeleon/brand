@@ -522,6 +522,7 @@ footer a {
   position: absolute;
   top: 78px;
   display: none;
+  z-index: 1000;
   -webkit-box-shadow: -6px 7px 16px -4px #4d4d4d;
   -moz-box-shadow: -6px 7px 16px -4px #4d4d4d;
   box-shadow: -6px 7px 16px -4px #4d4d4d;
@@ -1942,6 +1943,7 @@ input::-webkit-inner-spin-button {
   -webkit-transition: 0.2s linear;
   -o-transition: 0.2s linear;
   transition: 0.2s linear;
+  cursor: pointer;
 }
 .checkout-button:hover {
   color: white;
