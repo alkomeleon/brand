@@ -11,39 +11,10 @@
     <div class="header container">
         <div class="header-left">
             <a href="index.html"><img src="img/logo.png" alt="logo">Bran<span>d</span></a>
-            <form class="header-search" method="get">
-                <div class="search-browse">Browse &nbsp; <i class="fas fa-caret-down"></i>
-                </div>
-                <input type="text" class="input-text" name="search" v-model="searchLine" placeholder="Search for Item...">
-                <button v-on:click="filterGoods"><i class="fas fa-search"></i></button>
-            </form>
+            <search v-on:filter="filterGoods($event)"></search>
         </div>
         <div class="header-right">
-            <label class="cart-icon" for="cart"><img src="img/cart.png" alt="cart"></label>
-            <input class="cart" id="cart" type="checkbox">
-            <div class="cart-menu-box">
-                <div class="tail1 cart-tail1"></div>
-                <div class="tail2 cart-tail2"></div>
-                <div class="cart-menu" v-for="item in cart">
-                    <div class="cart-menu-img">
-                        <img v-bind:src="'img/' + item.img" alt="shirt">
-                    </div>
-                    <div class="cart-menu-info">
-                        <p>{{item.product_name}}</p>
-                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i><br>
-                        <span>{{item.count}} x ${{item.price}}</span>
-                    </div>
-                    <a v-on:click="removeFromCart(item)"  href="#"><i class="fas fa-times-circle"></i></a>
-                </div>
-                <div class="cart-menu-price">
-                    <p>TOTAL</p>
-                    <p>${{cartSum}}</p>
-                </div>
-                <div class="cart-menu-checkout-button-box">
-                    <a class="cart-menu-checkout-button" href="checkout.html">checkout</a>
-                    <a class="cart-menu-checkout-button" href="shopingCart.html">go to cart</a>
-                </div>
-            </div>
+            <shopping-cart v-bind:cart="cart" v-bind:cart-sum="cartSum" v-on:remove="removeFromCart($event)"></shopping-cart>
             <a class="my-acc" href="#">My Account &nbsp; <i class="fas fa-caret-down"></i></a>
         </div>
     </div>
@@ -102,17 +73,8 @@
     </div>
     <div class="product-nav-box container">
         <div class="product-content-box">
-            <div class="featured-content" v-if="responseOk">
-                <div class="products" v-for="item in goods" v-if="item.product_name.toLowerCase().includes(searchText.toLowerCase())">
-                    <img class="prod-img" v-bind:src="'img/' + item.img" alt="item">
-                    <p class="description">{{item.product_name}}</p>
-                    <p class="price">${{item.price}}</p>
-                    <div class="img-hover">
-                        <button v-on:click="addToCart(item)"><img src="img/cart.svg" alt="cart">Add to Cart</button>
-                    </div>
-                </div>
-            </div>
-            <div v-else>всё плохо</div>
+            <catalog v-if="responseOk" v-bind:goods="goods" v-bind:search-text="searchText" v-on:add="addToCart($event)"></catalog>
+            <error v-else>нет ответа</error>
             <div class="pagination-box">
                 <div class="pagination">
                     <ul>

@@ -521,16 +521,13 @@ footer a {
   padding: 19px;
   position: absolute;
   top: 78px;
-  display: none;
+  display: flex;
   z-index: 1000;
   -webkit-box-shadow: -6px 7px 16px -4px #4d4d4d;
   -moz-box-shadow: -6px 7px 16px -4px #4d4d4d;
   box-shadow: -6px 7px 16px -4px #4d4d4d;
-}
-#cart:checked ~ .cart-menu-box {
   animation-duration: 0.5s;
   animation-name: dropDown;
-  display: flex;
 }
 .tail1 {
   width: 0;
@@ -2039,6 +2036,12 @@ input::-webkit-inner-spin-button {
 .product-content li {
   list-style-type: none;
   margin-right: 10px;
+}
+.catError {
+  color: #f16d7f;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
 }
 .choose-list {
   width: 200px;
