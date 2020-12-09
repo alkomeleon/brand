@@ -80,10 +80,22 @@ const app = new Vue({
     methods: {
         async fetchGoods() {
             try {
-                let response = await fetch("https://raw.githubusercontent.com/alkomeleon/brand/main/catalog.json");
+                let response = await fetch("/catalogData");
                 if (response.ok) {
                     this.goods = await response.json();
                     console.log(this.goods);
+                } else {
+                    this.responseOk = false;
+                }
+            } catch (e) {
+                this.responseOk = false;
+            }
+        },
+        async fetchCart() {
+            try {
+                let response = await fetch("/cartData");
+                if (response.ok) {
+                    this.cart = await response.json();
                 } else {
                     this.responseOk = false;
                 }
@@ -98,31 +110,48 @@ const app = new Vue({
                 this.searchText = "";
             }
         },
-        addToCart(item) {
-            let itemCount = 0;
-            this.cart.forEach(cartItem => {
-                if(cartItem.id_product === item.id_product) {
-                    itemCount++;
-                    cartItem.count++;
-                }
-            })
-            if (itemCount === 0) {
-                this.cart.push({
-                    ...item,
-                    count: 1,
+        async addToCart(item) {
+            try {
+                let response = await fetch("/addToCart", {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json;charset=utf-8'
+                    },
+                    body: JSON.stringify(item)
                 });
+                if (response.ok) {
+                    let resp = await response.json();
+                    if (resp.result === 1) {
+                        this.cart = resp.cart;
+                    }
+                }
+            } catch (e) {
+                this.responseOk = false;
             }
-            console.log(this.cart);
         },
-        removeFromCart(item) {
-            let num = this.cart.indexOf(item);
-            if (num !== -1) {
-                this.cart.splice(num, 1);
+        async removeFromCart(item) {
+            try {
+                let response = await fetch("/removeFromCart", {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json;charset=utf-8'
+                    },
+                    body: JSON.stringify(item)
+                });
+                if (response.ok) {
+                    let resp = await response.json();
+                    if (resp.result === 1) {
+                        this.cart = resp.cart;
+                    }
+                }
+            } catch (e) {
+                this.responseOk = false;
             }
         }
     },
     mounted() {
         this.fetchGoods();
+        this.fetchCart();
     },
     computed: {
         cartSum(){
